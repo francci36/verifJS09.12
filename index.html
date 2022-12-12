@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cours Javascript de 09/12/2022</title>
+</head>
+<body>
+    <h1>On s'amuse avec JS</h1>
+    <div id="message"></div>
+    <form name="javascript" method="post" action="" onsubmit="return verifForm();">
+        <div class="input">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom">
+        </div>
+        <div class="input">
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom">
+        </div>
+        <div class="input">
+            <label for="age">Age:</label>
+            <select  name="age" id="age" onchange="verifAge();">
+
+            </select>
+        </div>
+        <div class="input">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" onblur="verifEmail(this);">
+        </div>
+        <div class="input">
+            <label for="telephone">Téléphone</label>
+            <input type="text" name="telephone" id="telephone" onblur="verifTelephone(this);">
+        </div>
+        <div class="input">
+            <label for="pays">Pays</label>
+            <select name="pays" id="pays" >
+
+            </select>
+        </div>
+        <div class="input">
+            <label for="password">Mot de passe</label>
+            <input type="password"  id="password1" name="password1"  onkeyup="verifLength(this,8);" onkeydown="verifLength(this,8);">
+            <button type="button" onclick="genereMdp();">Générer un mot de passe</button>
+            <button type="button" onmousedown="voirMdp();" onmouseup="cacherMdp();">Voir</button>
+            <button type="button" onclick="affiche5mdp();">Voir pendant 5 secondes</button>
+            <button type="button" onclick="gerald();" id="btn-affiche">Afficher</button>
+        </div>
+        <div class="input">
+            <label for="password">répéter le mot de passe</label>
+            <input type="password" id="password2" name="password2"  onblur="verifPassword();">
+        </div>
+        <div class="input">
+            <button type="submit" name="submit" id="submit">inscription</button>
+            <button type="reset" name="reset" id="reset">Effacer</button>
+        </div>
+        
+    </form>
+    <button type="button" name="ajax" id="ajax">Effectuer une requêtte Ajax</button>
+    <div id="retour_ajax">
+            
+    </div>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

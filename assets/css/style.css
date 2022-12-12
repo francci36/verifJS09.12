@@ -1,0 +1,23 @@
+body{
+    width: 100%;
+    height: auto;
+    padding-left: 100px;
+}
+h1{
+    background-color: rgb(165, 212, 212);
+    padding-right: 400px;
+}
+form{
+    width: 80%;
+    height: 400px;
+    background-color: cadetblue;
+
+}
+.input{
+    padding-top: 15px;
+   
+    
+}
+label, input{
+    padding-left: 10px;
+}
